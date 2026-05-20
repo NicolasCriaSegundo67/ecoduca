@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,8 +28,8 @@
 <section id="sobre">
     <h2>Sobre o Projeto</h2>
     <p>
-        O EcoEduca é uma plataforma educativa criada para conscientizar estudantes sobre sustentabilidade.
-        Nosso objetivo é ensinar práticas sustentáveis através da tecnologia.
+        O EcoEduca é uma plataforma criada para ensinar sustentabilidade
+        através de quizzes, dicas ecológicas e ferramentas educativas.
     </p>
 </section>
 
@@ -36,7 +37,7 @@
     <h2>Quiz de Sustentabilidade</h2>
 
     <div class="quiz-box">
-        <p id="pergunta">Pergunta aparecerá aqui</p>
+        <p id="pergunta"></p>
 
         <button onclick="responder(0)" id="op0"></button>
         <button onclick="responder(1)" id="op1"></button>
@@ -47,9 +48,10 @@
 </section>
 
 <section id="dicas">
-    <h2>Dicas Sustentáveis</h2>
+    <h2>5 Dicas Sustentáveis</h2>
 
     <div class="cards">
+
         <div class="card">
             <h3>💧 Economize Água</h3>
             <p>Feche a torneira enquanto escova os dentes.</p>
@@ -57,23 +59,37 @@
 
         <div class="card">
             <h3>⚡ Economize Energia</h3>
-            <p>Apague luzes quando não estiver usando.</p>
+            <p>Desligue aparelhos que não estão sendo usados.</p>
         </div>
 
         <div class="card">
             <h3>♻️ Recicle</h3>
-            <p>Separe corretamente o lixo reciclável.</p>
+            <p>Separe corretamente lixo reciclável.</p>
         </div>
+
+        <div class="card">
+            <h3>🛍️ Evite Plástico</h3>
+            <p>Use sacolas reutilizáveis.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌳 Preserve a Natureza</h3>
+            <p>Evite desperdícios e cuide do meio ambiente.</p>
+        </div>
+
     </div>
 </section>
 
 <section id="calculadora">
-    <h2>Calculadora de Economia</h2>
+    <h2>Calculadora de Consumo de Água</h2>
 
     <p>Quantos minutos você demora no banho?</p>
+
     <input type="number" id="banho" placeholder="Digite os minutos">
 
-    <button onclick="calcularEconomia()">Calcular</button>
+    <button onclick="calcularAgua()">
+        Calcular
+    </button>
 
     <p id="economiaResultado"></p>
 </section>
