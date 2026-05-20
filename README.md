@@ -21,4 +21,4 @@ Promover conscientização ambiental através da tecnologia.
 2. Abra o `index.html` no navegador.
 
 ## Autor
-Seu nome
+Nicolas Lian de Lara
