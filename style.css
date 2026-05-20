@@ -1,81 +1,86 @@
 * {
-    text-align: center;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 15px;
-    font-weight: bold;
-}
-
-.hero {
-    text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(to right, #98fb98, #90ee90);
-}
-
-.hero h2 {
-    font-size: 2rem;
-}
-
-section {
-    padding: 40px;
-}
-
-h2 {
-    color: #2e8b57;
+#pergunta {
+    font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
-.quiz-box {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    max-width: 500px;
-}
-
 button {
-    display: block;
+    width: 100%;
+    padding: 14px;
     margin: 10px 0;
-    padding: 12px;
     border: none;
-    background: #2e8b57;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #2e8b57, #43b06c);
     color: white;
-    border-radius: 8px;
+    font-size: 1rem;
     cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
 }
 
 button:hover {
-    background: #246b46;
+    transform: scale(1.02);
+    opacity: 0.9;
 }
 
 .cards {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 .card {
     background: white;
-    padding: 20px;
-    border-radius: 10px;
-    flex: 1;
-    min-width: 200px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #2e8b57;
+    margin-bottom: 10px;
 }
 
 input {
-    padding: 10px;
-    width: 200px;
-    margin: 10px 0;
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin: 15px 0;
+}
+
+#resultado,
+#economiaResultado {
+    margin-top: 15px;
+    font-weight: bold;
 }
 
 footer {
     background: #2e8b57;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
 }

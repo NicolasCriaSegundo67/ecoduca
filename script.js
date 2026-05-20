@@ -1,6 +1,4 @@
 const perguntas = [
-    {
-        pergunta: "Qual atitude ajuda o meio ambiente?",
         opcoes: ["Jogar lixo no chão", "Reciclar materiais", "Desperdiçar água"],
         correta: 1
     },
@@ -13,6 +11,26 @@ const perguntas = [
         pergunta: "Qual é uma prática sustentável?",
         opcoes: ["Desmatamento", "Economizar água", "Poluição"],
         correta: 1
+    },
+    {
+        pergunta: "Qual material demora mais para se decompor?",
+        opcoes: ["Papel", "Casca de banana", "Plástico"],
+        correta: 2
+    },
+    {
+        pergunta: "Qual ação economiza energia elétrica?",
+        opcoes: ["Deixar luz acesa", "Desligar aparelhos sem uso", "Abrir a geladeira toda hora"],
+        correta: 1
+    },
+    {
+        pergunta: "O que significa reciclar?",
+        opcoes: ["Jogar lixo no rio", "Reutilizar materiais", "Queimar resíduos"],
+        correta: 1
+    },
+    {
+        pergunta: "Qual destas fontes é renovável?",
+        opcoes: ["Energia eólica", "Petróleo", "Carvão mineral"],
+        correta: 0
     }
 ];
 
@@ -51,10 +69,12 @@ function responder(opcao) {
 }
 
 function calcularEconomia() {
-    const minutos = document.getElementById("banho").value;
+    const minutos = Number(document.getElementById("banho").value);
     const resultado = document.getElementById("economiaResultado");
 
-    if (minutos > 10) {
+    if (minutos === 0) {
+        resultado.innerText = "💀 Você fede";
+    } else if (minutos > 10) {
         resultado.innerText =
             "Você pode economizar água diminuindo o tempo do banho!";
     } else {
