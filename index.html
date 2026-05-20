@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoEduca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🌱 EcoEduca</h1>
+    <p>Educação Sustentável para um Futuro Melhor</p>
+</header>
+
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#dicas">Dicas</a>
+    <a href="#calculadora">Calculadora</a>
+</nav>
+
+<section class="hero">
+    <h2>ODS 4 - Educação de Qualidade</h2>
+    <p>Aprenda sustentabilidade de forma interativa!</p>
+</section>
+
+<section id="sobre">
+    <h2>Sobre o Projeto</h2>
+    <p>
+        O EcoEduca é uma plataforma educativa criada para conscientizar estudantes sobre sustentabilidade.
+        Nosso objetivo é ensinar práticas sustentáveis através da tecnologia.
+    </p>
+</section>
+
+<section id="quiz">
+    <h2>Quiz de Sustentabilidade</h2>
+
+    <div class="quiz-box">
+        <p id="pergunta">Pergunta aparecerá aqui</p>
+
+        <button onclick="responder(0)" id="op0"></button>
+        <button onclick="responder(1)" id="op1"></button>
+        <button onclick="responder(2)" id="op2"></button>
+
+        <p id="resultado"></p>
+    </div>
+</section>
+
+<section id="dicas">
+    <h2>Dicas Sustentáveis</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>💧 Economize Água</h3>
+            <p>Feche a torneira enquanto escova os dentes.</p>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Economize Energia</h3>
+            <p>Apague luzes quando não estiver usando.</p>
+        </div>
+
+        <div class="card">
+            <h3>♻️ Recicle</h3>
+            <p>Separe corretamente o lixo reciclável.</p>
+        </div>
+    </div>
+</section>
+
+<section id="calculadora">
+    <h2>Calculadora de Economia</h2>
+
+    <p>Quantos minutos você demora no banho?</p>
+    <input type="number" id="banho" placeholder="Digite os minutos">
+
+    <button onclick="calcularEconomia()">Calcular</button>
+
+    <p id="economiaResultado"></p>
+</section>
+
+<footer>
+    <p>EcoEduca © 2026 | Projeto ODS</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
