@@ -17,6 +17,8 @@
 <a href="#dicas">Dicas</a>
 <a href="#calculadora">Calculadora</a>
 <a href="#memoria">Jogo da Memória</a>
+<a href="#coleta">Coleta Seletiva</a>
+<a href="#energia">Eco Clicker</a>
 </nav>
 
 <section id="quiz">
@@ -55,6 +57,22 @@
 <section id="memoria">
 <h2>Mini Jogo da Memória</h2>
 <div class="memory-game" id="memory-game"></div>
+</section>
+
+<section id="coleta">
+<h2>Mini Jogo: Coleta Seletiva ♻️</h2>
+<p>Escolha a lixeira correta:</p>
+<p id="item-coleta"></p>
+<button onclick="responderColeta('papel')">🟦 Papel</button>
+<button onclick="responderColeta('plastico')">🟥 Plástico</button>
+<button onclick="responderColeta('vidro')">🟩 Vidro</button>
+<p id="resultado-coleta"></p>
+</section>
+
+<section id="energia">
+<h2>Eco Clicker ⚡</h2>
+<p>Economias feitas: <span id="energia-pontos">0</span></p>
+<button onclick="economizarEnergia()">Clique para Economizar Energia</button>
 </section>
 
 <script src="script.js"></script>

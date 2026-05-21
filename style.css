@@ -10,3 +10,5 @@ button{display:block;width:100%;margin:10px 0;padding:12px;background:#2e8b57;co
 .memory-game{display:grid;grid-template-columns:repeat(4,80px);gap:10px;justify-content:center}
 .memory-card{height:80px;display:flex;justify-content:center;align-items:center;font-size:2rem;cursor:pointer;background:#2e8b57;color:transparent}
 .memory-card.flipped{background:#fff;color:#000}
+#coleta button,#energia button{max-width:300px}
+#energia-pontos{font-weight:bold;color:#2e8b57;font-size:1.3rem}

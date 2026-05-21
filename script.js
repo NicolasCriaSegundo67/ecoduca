@@ -51,4 +51,32 @@ setTimeout(()=>{primeira.classList.remove('flipped');segunda.classList.remove('f
 };
 game.appendChild(card);
 });
+const itensColeta=[
+{nome:'Jornal 📰',tipo:'papel'},
+{nome:'Garrafa PET 🧴',tipo:'plastico'},
+{nome:'Garrafa de vidro 🍾',tipo:'vidro'}
+];
+let coletaAtual=0;
+function carregarColeta(){
+document.getElementById('item-coleta').innerText='Item: '+itensColeta[coletaAtual].nome;
+}
+function responderColeta(tipo){
+const r=document.getElementById('resultado-coleta');
+if(tipo===itensColeta[coletaAtual].tipo){
+r.innerText='✅ Acertou a lixeira!';
+coletaAtual=(coletaAtual+1)%itensColeta.length;
+setTimeout(()=>{r.innerText='';carregarColeta();},700);
+}else{
+r.innerText='❌ Lixeira errada!';
+}
+}
+let pontosEnergia=0;
+function economizarEnergia(){
+pontosEnergia++;
+document.getElementById('energia-pontos').innerText=pontosEnergia;
+if(pontosEnergia===50){
+alert('🏆 Conquista desbloqueada: Guardião da Energia!');
+}
+}
 carregarPergunta();
+carregarColeta();
