@@ -1,102 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoEduca</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoEduca 2.0</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header>
-    <h1>🌱 EcoEduca</h1>
-    <p>Educação Sustentável para um Futuro Melhor</p>
+<h1>🌱 EcoEduca</h1>
+<p>Educação Sustentável para um Futuro Melhor</p>
 </header>
 
 <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#quiz">Quiz</a>
-    <a href="#dicas">Dicas</a>
-    <a href="#calculadora">Calculadora</a>
+<a href="#quiz">Quiz</a>
+<a href="#dicas">Dicas</a>
+<a href="#calculadora">Calculadora</a>
+<a href="#memoria">Jogo da Memória</a>
 </nav>
 
-<section class="hero">
-    <h2>ODS 4 - Educação de Qualidade</h2>
-    <p>Aprenda sustentabilidade de forma interativa!</p>
-</section>
-
-<section id="sobre">
-    <h2>Sobre o Projeto</h2>
-    <p>
-        O EcoEduca é uma plataforma criada para ensinar sustentabilidade
-        através de quizzes, dicas ecológicas e ferramentas educativas.
-    </p>
-</section>
-
 <section id="quiz">
-    <h2>Quiz de Sustentabilidade</h2>
-
-    <div class="quiz-box">
-        <p id="pergunta"></p>
-
-        <button onclick="responder(0)" id="op0"></button>
-        <button onclick="responder(1)" id="op1"></button>
-        <button onclick="responder(2)" id="op2"></button>
-
-        <p id="resultado"></p>
-    </div>
+<h2>Quiz Sustentável</h2>
+<div class="quiz-box">
+<p id="pergunta"></p>
+<button id="op0" onclick="responder(0)"></button>
+<button id="op1" onclick="responder(1)"></button>
+<button id="op2" onclick="responder(2)"></button>
+<button id="op3" onclick="responder(3)"></button>
+<p id="resultado"></p>
+</div>
 </section>
 
 <section id="dicas">
-    <h2>5 Dicas Sustentáveis</h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>💧 Economize Água</h3>
-            <p>Feche a torneira enquanto escova os dentes.</p>
-        </div>
-
-        <div class="card">
-            <h3>⚡ Economize Energia</h3>
-            <p>Desligue aparelhos que não estão sendo usados.</p>
-        </div>
-
-        <div class="card">
-            <h3>♻️ Recicle</h3>
-            <p>Separe corretamente lixo reciclável.</p>
-        </div>
-
-        <div class="card">
-            <h3>🛍️ Evite Plástico</h3>
-            <p>Use sacolas reutilizáveis.</p>
-        </div>
-
-        <div class="card">
-            <h3>🌳 Preserve a Natureza</h3>
-            <p>Evite desperdícios e cuide do meio ambiente.</p>
-        </div>
-
-    </div>
+<h2>Dicas Sustentáveis</h2>
+<div class="cards">
+<div class="card">💧 Economize água</div>
+<div class="card">⚡ Apague luzes</div>
+<div class="card">♻️ Recicle lixo</div>
+<div class="card">🚌 Use transporte público</div>
+<div class="card">🛍️ Evite plástico</div>
+<div class="card">🌳 Preserve árvores</div>
+<div class="card">🚿 Tome banhos curtos</div>
+<div class="card">☀️ Aproveite luz natural</div>
+</div>
 </section>
 
 <section id="calculadora">
-    <h2>Calculadora de Consumo de Água</h2>
-
-    <p>Quantos minutos você demora no banho?</p>
-
-    <input type="number" id="banho" placeholder="Digite os minutos">
-
-    <button onclick="calcularAgua()">
-        Calcular
-    </button>
-
-    <p id="economiaResultado"></p>
+<h2>Calculadora de Água</h2>
+<input type="number" id="banho" placeholder="Minutos de banho">
+<button onclick="calcularAgua()">Calcular</button>
+<p id="economiaResultado"></p>
 </section>
 
-<footer>
-    <p>EcoEduca © 2026 | Projeto ODS</p>
-</footer>
+<section id="memoria">
+<h2>Mini Jogo da Memória</h2>
+<div class="memory-game" id="memory-game"></div>
+</section>
 
 <script src="script.js"></script>
 </body>
